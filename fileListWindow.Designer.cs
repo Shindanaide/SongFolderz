@@ -51,7 +51,8 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(632, 289);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "-Welcome to SongFolderz 0.2.92 by Ercanbald-";
+            this.textBox1.Text = "-Welcome to SongFolderz 0.2.93 by Ercanbald-\r\n\r\nUpdate: Now save lists correclty\r" +
+    "\n\r\nTODO: List load to software\r\n\r\nFor bugs: leonardopaffi@hotmail.it\r\n";
             // 
             // fileListWindow
             // 

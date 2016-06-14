@@ -39,6 +39,8 @@
             this.b_next = new System.Windows.Forms.Button();
             this.b_edit = new System.Windows.Forms.Button();
             this.b_saveList = new System.Windows.Forms.Button();
+            this.b_loadList = new System.Windows.Forms.Button();
+            this.tb_listName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,11 +149,30 @@
             this.b_saveList.UseVisualStyleBackColor = true;
             this.b_saveList.Click += new System.EventHandler(this.b_saveList_Click);
             // 
+            // b_loadList
+            // 
+            this.b_loadList.Location = new System.Drawing.Point(513, 318);
+            this.b_loadList.Name = "b_loadList";
+            this.b_loadList.Size = new System.Drawing.Size(75, 23);
+            this.b_loadList.TabIndex = 10;
+            this.b_loadList.Text = "Load List";
+            this.b_loadList.UseVisualStyleBackColor = true;
+            this.b_loadList.Click += new System.EventHandler(this.b_loadList_Click);
+            // 
+            // tb_listName
+            // 
+            this.tb_listName.Location = new System.Drawing.Point(369, 320);
+            this.tb_listName.Name = "tb_listName";
+            this.tb_listName.Size = new System.Drawing.Size(138, 20);
+            this.tb_listName.TabIndex = 11;
+            // 
             // fileManagementWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 355);
+            this.Controls.Add(this.tb_listName);
+            this.Controls.Add(this.b_loadList);
             this.Controls.Add(this.b_saveList);
             this.Controls.Add(this.b_edit);
             this.Controls.Add(this.b_next);
@@ -189,5 +210,7 @@
         private System.Windows.Forms.Button b_edit;
         public System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button b_saveList;
+        private System.Windows.Forms.Button b_loadList;
+        private System.Windows.Forms.TextBox tb_listName;
     }
 }

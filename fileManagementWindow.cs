@@ -186,7 +186,12 @@ namespace SongFolderz
         private void b_saveList_Click(object sender, EventArgs e)
         {
             System.IO.Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + "\\SFz_Lists");
-            System.IO.File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + "\\SFz_Lists\\ciccio.txt", editWindow.list);
+            System.IO.File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + "\\SFz_Lists\\"+ tb_listName.Text +".txt", editWindow.list);
+        }
+
+        private void b_loadList_Click(object sender, EventArgs e)
+        {
+            //TODO: Load List method
         }
     }
 }
